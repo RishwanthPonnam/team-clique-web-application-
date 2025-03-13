@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f2f5; /* Softer, modern background */
 }
 
 /* Navbar */
@@ -11,13 +11,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #222;
+    background: #1a1a2e;
     color: white;
     padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -25,7 +26,8 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 16px;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -35,118 +37,296 @@ nav a:hover {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(to right, #007bff, #00c6ff);
+    padding: 250px 20px; /* Increased padding for a grander feel */
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     color: white;
+}
+
+.hero h1 {
+    font-size: 5rem; /* Bigger heading for a premium look */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeInText 1.5s ease-in-out;
+}
+
+.hero p {
+    font-size: 2rem; /* Increased text size for clarity */
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    line-height: 2;
+    animation: fadeInText 1.5s ease-in-out;
 }
 
 .cta-button {
     background: #ffcc00;
     border: none;
-    padding: 12px 20px;
-    font-size: 16px;
+    padding: 20px 40px; /* More prominent button */
+    font-size: 26px;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 12px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInText 2s ease-in-out;
 }
 
 .cta-button:hover {
     background: #e6b800;
+    box-shadow: 0 8px 20px rgba(255, 204, 0, 0.5);
 }
 
 /* Our Visionaries Section */
 .visionaries {
     text-align: center;
-    padding: 60px 20px;
-    background: #fff;
+    padding: 70px 20px;
+    background: #ffffff;
 }
 
 .section-title {
-    font-size: 2rem;
-    color: #222;
-    margin-bottom: 30px;
+    font-size: 3rem;
+    color: #1a1a2e;
+    margin-bottom: 40px;
     text-transform: uppercase;
+    animation: fadeInDown 1s ease-in-out;
 }
 
 /* Visionary Cards */
 .visionary-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .visionary {
-    background: white;
+    background: #f0f0f3;
     border-radius: 15px;
-    padding: 20px;
-    max-width: 250px;
+    padding: 35px 25px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform ease-in-out, opacity ease-in-out;
+    animation: fadeIn ease-in-out;
 }
 
 .visionary img {
     width: 100%;
     max-width: 200px;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 4px solid #1a1a2e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: ease-in-out;
 }
 
 .visionary h3 {
     margin-top: 15px;
-    font-size: 1.2rem;
-    color: #222;
+    font-size: 2rem;
+    color: #1a1a2e;
+    font-weight: bold;
 }
 
 .visionary p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #555;
+    margin-top: 5px;
 }
 
 .visionary:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Why Join Our Club Section */
-.why-join {
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Why Should I Join the Club? Section */
+.join-club {
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #007bff, #00c6ff);
-    color: white;
+    padding: 100px 20px;
+    background: #f9f9f9;
+}
+
+.join-club h2 {
+    font-size: 3.5rem;
+    color: #1a1a2e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: fadeInDown  ease-in-out;
 }
 
 .benefits-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    padding: 0 5%;
 }
 
 .benefit {
     background: white;
     border-radius: 15px;
-    padding: 20px;
-    max-width: 250px;
+    padding: 40px 30px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    color: black;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(40px);
+    transition:  ease-out, transform  ease-out;
+    border-left: 5px solid #ffcc00;
+    border-right: 5px solid #ffcc00;
+    position: relative;
+    overflow: hidden;
 }
 
-.benefit img {
-    width: 60px;
-    height: 60px;
+.benefit::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #ffcc00;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition:  ease-in-out;
+}
+
+.benefit:hover::before {
+    transform: scaleX(1);
+}
+
+.benefit i {
+    font-size: 4rem;
+    color: #ffcc00;
     margin-bottom: 15px;
+    transition:  ease-in-out;
 }
 
-.benefit:hover {
-    transform: translateY(-10px);
+.benefit:hover i {
+    transform: scale(1.1);
+}
+
+.benefit h3 {
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.benefit p {
+    font-size: 1.4rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Animation */
+.benefit.visible {
+
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .join-club h2 {
+        font-size: 2.8rem;
+    }
+    .benefits-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+/* About Our College Section */
+.about-college {
+    text-align: center;
+    padding: 100px 20px;
+    background: #ffffff;
+}
+
+.about-college h2 {
+    font-size: 3.5rem;
+    color: #1a1a2e;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: fadeInDown  ease-in-out;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #1a1a2e;
+    border-right: 5px solid #1a1a2e;
+    border-radius: 10px;
+    background: #f9f9f9;
+    transform: translateY(40px);
+    transition:  ease-out, transform 1s ease-out;
+}
+
+.about-content.visible {
+    transform: translateY(0);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-college h2 {
+        font-size: 2.8rem;
+    }
+    .about-content {
+        font-size: 1.4rem;
+    }
 }
 
 /* Footer */
 .footer {
-    background: #222;
+    background: #1a1a2e;
     color: white;
     text-align: center;
     padding: 15px 0;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color  ease;
+}
+
+.footer a:hover {
+    color: #fff;
 }

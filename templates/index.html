@@ -29,27 +29,64 @@
         <h2 class="section-title">Our Visionaries</h2>
         <div class="visionary-container">
             <div class="visionary">
-                <img src="/static/images/secretary.jpg" alt="Secretary Shri. J.V. Krishna Ra">
+                <img src="/static/images/OIP (1).jpeg" alt="Secretary Shri. J.V. Krishna Ra">
                 <h3>Secretary</h3>
                 <p>Shri. J.V. Krishna Ra</p>
             </div>
             <div class="visionary">
-                <img src="/static/images/director.jpg" alt="Director Dr. CH. Sanjay">
+                <img src="/static/images/OIP (4).jpeg" alt="Director Dr. CH. Sanjay">
                 <h3>Director</h3>
                 <p>Dr. CH. Sanjay</p>
             </div>
             <div class="visionary">
-                <img src="/static/images/principal.jpg" alt="Principal Dr. P.C. Krishnamachary">
+                <img src="/static/images/OIP.jpeg" alt="Principal Dr. P.C. Krishnamachary">
                 <h3>Principal</h3>
                 <p>Dr. P.C. Krishnamachary</p>
             </div>
             <div class="visionary">
-                <img src="/static/images/hod.jpg" alt="Head of ECE Towered Sultana">
+                <img src="/static/images/OIP (2).jpeg" alt="Head of ECE Towered Sultana">
                 <h3>Head of Department - ECE</h3>
                 <p>Towered Sultana</p>
             </div>
         </div>
     </section>
+       <!-- Why Should I Join the Club? Section -->
+       <section class="join-club">
+        <h2 class="section-title">Why Should I Join the Club?</h2>
+        <div class="benefits-container">
+            <div class="benefit">
+                <i class="fas fa-network-wired"></i>
+                <h3>Networking Opportunities</h3>
+                <p>Connect with like-minded peers, alumni, and industry professionals.</p>
+            </div>
+            <div class="benefit">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Skill Development</h3>
+                <p>Enhance your technical and soft skills through workshops and events.</p>
+            </div>
+            <div class="benefit">
+                <i class="fas fa-trophy"></i>
+                <h3>Competitions & Hackathons</h3>
+                <p>Participate in coding challenges and showcase your talents.</p>
+            </div>
+            <div class="benefit">
+                <i class="fas fa-users"></i>
+                <h3>Leadership & Teamwork</h3>
+                <p>Develop leadership qualities by organizing and managing club activities.</p>
+            </div>
+        </div>
+    </section>
+    <!-- About Our College Section -->
+<section class="about-college">
+    <h2 class="section-title">About Our College</h2>
+    <div class="about-content">
+        <p>As one of the top ten most preferred institutions in Telangana, JBIET continues to strive to impart technical (engineering) and professional education of very high standards.</p>
+        <p>The aim of JBIET is to mould young learners into globally competitive professionals who are professionally deft, intellectually adept, and socially responsible.</p>
+        <p>The expert faculty at JBIET inculcate the best values and principles, ascribing to a modern curriculum; while the students imbibe pragmatic perception and a pro-active nature, which spurs them towards exploration and advanced inquiry, resulting in valuable insights.</p>
+        <p>The Placement record of JBIET over the years is proof of our right efforts in enabling the best-in-class engineering, technical, and professional education to aspirants.</p>
+    </div>
+</section>
+
 
     <footer class="footer">
         <p>&copy; 2025 Clique Club. All Rights Reserved.</p>
@@ -61,14 +98,34 @@
     </footer>
 
     <script>
-        // Animation using GSAP
-        gsap.from(".visionary", {
-            opacity: 0,
-            y: 50,
-            duration: 1,
-            stagger: 0.3,
-            ease: "power2.out"
-        });
+        gsap.from(".benefit", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.3,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".join-club",
+        start: "top 80%",
+        toggleActions: "play none none none"
+    }
+    
+    }
+);
+ 
+gsap.from(".about-content", {
+    opacity: 0,
+    y: 50,
+    duration: 1.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".about-college",
+        start: "top 80%",
+        toggleActions: "play none none none"
+    }
+});
+
+
     </script>
 </body>
 </html>
