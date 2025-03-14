@@ -1,9 +1,10 @@
-/* General Styling */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5; /* Softer, modern background */
+    background-color: #2C2C2C; /* Charcoal Gray */
+    color: white;
 }
 
 /* Navbar */
@@ -11,81 +12,85 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1a1a2e;
+    background: #121212; /* Pure Black */
     color: white;
     padding: 15px 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 nav .logo {
     font-size: 28px;
     font-weight: bold;
+    color: #8E44AD; /* Violet */
 }
 
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 18px;
+    font-size: 30px;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #ffcc00;
+    color: #8E44AD; /* Violet Accent */
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 250px 20px; /* Increased padding for a grander feel */
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    padding: 250px 20px;
+    background: #1E1E1E; /* Dark Gray */
     color: white;
 }
 
 .hero h1 {
-    font-size: 5rem; /* Bigger heading for a premium look */
+    font-size: 5rem;
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
     animation: fadeInText 1.5s ease-in-out;
+    color: #8E44AD; /* Violet */
 }
 
 .hero p {
-    font-size: 2rem; /* Increased text size for clarity */
+    font-size: 2rem;
     max-width: 1000px;
     margin: 0 auto 30px;
     line-height: 2;
     animation: fadeInText 1.5s ease-in-out;
 }
 
+/* CTA Button */
 .cta-button {
-    background: #ffcc00;
+    background: #8E44AD; /* Violet */
     border: none;
-    padding: 20px 40px; /* More prominent button */
+    padding: 20px 40px;
     font-size: 26px;
     font-weight: bold;
     cursor: pointer;
     border-radius: 12px;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.3s ease, box-shadow 0.3s ease;
     animation: fadeInText 2s ease-in-out;
+    color: white;
 }
 
 .cta-button:hover {
-    background: #e6b800;
-    box-shadow: 0 8px 20px rgba(255, 204, 0, 0.5);
+    background: #732D91; /* Darker Violet */
+    box-shadow: 0 8px 20px rgba(142, 68, 173, 0.5);
 }
 
-/* Our Visionaries Section */
+/* Visionaries Section */
 .visionaries {
     text-align: center;
     padding: 70px 20px;
-    background: #ffffff;
+    background: #1E1E1E; /* Dark Gray */
 }
 
 .section-title {
     font-size: 3rem;
-    color: #1a1a2e;
+    color: #8E44AD; /* Violet */
     margin-bottom: 40px;
     text-transform: uppercase;
     animation: fadeInDown 1s ease-in-out;
@@ -100,11 +105,11 @@ nav a:hover {
 }
 
 .visionary {
-    background: #f0f0f3;
+    background: #2C2C2C; /* Charcoal Gray */
     border-radius: 15px;
     padding: 35px 25px;
     text-align: center;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
     transition: transform ease-in-out, opacity ease-in-out;
     animation: fadeIn ease-in-out;
 }
@@ -113,27 +118,95 @@ nav a:hover {
     width: 100%;
     max-width: 200px;
     border-radius: 50%;
-    border: 4px solid #1a1a2e;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    animation: ease-in-out;
+    border: 4px solid #8E44AD;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
 }
 
 .visionary h3 {
     margin-top: 15px;
     font-size: 2rem;
-    color: #1a1a2e;
+    color: #8E44AD; /* Violet */
     font-weight: bold;
 }
 
-.visionary p {
-    font-size: 1.3rem;
-    color: #555;
-    margin-top: 5px;
+/* Join Club Section */
+.join-club {
+    text-align: center;
+    padding: 100px 20px;
+    background: #1E1E1E; /* Dark Gray */
 }
 
-.visionary:hover {
+.join-club h2 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Benefits Cards */
+.benefit {
+    background: #2C2C2C;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #8E44AD;
+    border-right: 5px solid #8E44AD;
+}
+
+.benefit:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* About College Section */
+.about-college {
+    text-align: center;
+    padding: 100px 20px;
+    background: #1E1E1E; /* Dark Gray */
+}
+
+.about-college h2 {
+    font-size: 3.5rem;
+    color: #8E44AD; /* Violet */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    color: #ddd;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #8E44AD;
+    border-right: 5px solid #8E44AD;
+    border-radius: 10px;
+    background: #2C2C2C;
+}
+
+/* Footer */
+.footer {
+    background: #121212; /* Pure Black */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer a {
+    color: #8E44AD; /* Violet */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color ease;
+}
+
+.footer a:hover {
+    color: #ddd;
 }
 
 /* Animations */
@@ -167,166 +240,14 @@ nav a:hover {
         transform: translateY(0);
     }
 }
-/* Why Should I Join the Club? Section */
-.join-club {
-    text-align: center;
-    padding: 100px 20px;
-    background: #f9f9f9;
-}
-
-.join-club h2 {
-    font-size: 3.5rem;
-    color: #1a1a2e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    animation: fadeInDown  ease-in-out;
-}
-
-.benefits-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    justify-content: center;
-    padding: 0 5%;
-}
-
-.benefit {
-    background: white;
-    border-radius: 15px;
-    padding: 40px 30px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transform: translateY(40px);
-    transition:  ease-out, transform  ease-out;
-    border-left: 5px solid #ffcc00;
-    border-right: 5px solid #ffcc00;
-    position: relative;
-    overflow: hidden;
-}
-
-.benefit::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    background: #ffcc00;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition:  ease-in-out;
-}
-
-.benefit:hover::before {
-    transform: scaleX(1);
-}
-
-.benefit i {
-    font-size: 4rem;
-    color: #ffcc00;
-    margin-bottom: 15px;
-    transition:  ease-in-out;
-}
-
-.benefit:hover i {
-    transform: scale(1.1);
-}
-
-.benefit h3 {
-    font-size: 2rem;
-    color: #1a1a2e;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-.benefit p {
-    font-size: 1.4rem;
-    color: #555;
-    line-height: 1.8;
-}
-
-/* Animation */
-.benefit.visible {
-
-    transform: translateY(0);
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .join-club h2 {
+    .join-club h2, .about-college h2 {
         font-size: 2.8rem;
     }
-    .benefits-container {
-        grid-template-columns: 1fr; 
+    .benefits-container, .visionary-container {
+        grid-template-columns: 1fr;
     }
 }
 
-/* About Our College Section */
-.about-college {
-    text-align: center;
-    padding: 100px 20px;
-    background: #ffffff;
-}
-
-.about-college h2 {
-    font-size: 3.5rem;
-    color: #1a1a2e;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    animation: fadeInDown  ease-in-out;
-}
-
-.about-content {
-    max-width: 900px;
-    margin: 0 auto;
-    font-size: 1.6rem;
-    color: #555;
-    line-height: 1.8;
-    text-align: justify;
-    padding: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #1a1a2e;
-    border-right: 5px solid #1a1a2e;
-    border-radius: 10px;
-    background: #f9f9f9;
-    transform: translateY(40px);
-    transition:  ease-out, transform 1s ease-out;
-}
-
-.about-content.visible {
-    transform: translateY(0);
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-college h2 {
-        font-size: 2.8rem;
-    }
-    .about-content {
-        font-size: 1.4rem;
-    }
-}
-
-/* Footer */
-.footer {
-    background: #1a1a2e;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
-
-.footer a {
-    color: #ffcc00;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color  ease;
-}
-
-.footer a:hover {
-    color: #fff;
-}
